@@ -1,0 +1,20 @@
+台灣人 PERM 薪資分析
+1. Top 10 Cities
+2. Top 10 Companies
+3. Salary Distribution by Year
+4. Salary Distribution by State
+5. Salary Distribution by Area
+6. Search by ID, Company, State, City
+
+To Do:
+1. Scrap the data from visadoor DONE
+2. Bay area cities list
+3. Local outcome functions
+	a. Charts
+	b. Plots
+	c. Searching Function
+4. Build the website locally
+5. Serve with free resource, open source
+
+PTT - 台灣人申請EB2&EB3的薪資統計
+https://devcenter.heroku.com/articles/deploying-python
