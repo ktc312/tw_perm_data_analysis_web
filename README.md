@@ -1,6 +1,6 @@
 台灣人 PERM 薪資分析
 ==================
-PTT - 台灣人申請EB2&EB3的薪資統計
+**PTT - 台灣人申請EB2&EB3的薪資統計**
 
 目前進度
 ========
@@ -11,6 +11,7 @@ To Do
 ========
 1. Outcome functions
 2. Build the website
+3. Serve on Heroku
 
 
 License
