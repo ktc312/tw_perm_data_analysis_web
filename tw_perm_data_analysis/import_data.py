@@ -95,8 +95,14 @@ def import_main():
     # Separate State and City
     data_cleaning.separate_tate_city(appended_data, 'City_State')
 
+    # Clean employer name
+    data_cleaning.clean_employer_name(appended_data, 'Employer')
+
     # Add Area
     data_cleaning.add_area(appended_data, 'City_State')
+
+    # NaN
+    data_cleaning.clear_nan_value(appended_data)
 
     sorted_appended_data = appended_data.sort_values('Decision_Date', ascending=False)
 
