@@ -9,9 +9,8 @@ PTT - 台灣人申請EB2&EB3的薪資統計
 
 To Do
 ========
-1. Bay area cities list
-2. Outcome functions
-3. Build the website
+1. Outcome functions
+2. Build the website
 
 
 License

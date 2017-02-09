@@ -10,6 +10,10 @@ ny_cities_df = pd.read_csv(data_path + 'data/NY_cities.csv', names='c', dtype=st
 ny_cities = []
 for x in ny_cities_df['c']:
     ny_cities.append(x)
+bay_cities_df = pd.read_csv(data_path + 'data/Bay_Area_cities.csv', names='city', dtype=str)
+bay_cities = []
+for x in bay_cities_df['c']:
+    bay_cities.append(x)
 
 
 # Convert DateTime
@@ -78,6 +82,11 @@ def add_area(input_data, input_region):
             else:
                 area.append('Missing')
         # TODO: add Bay Area cities list
+        elif state == 'CA':
+            if city in bay_cities:
+                area.append('Bay Area')
+            else:
+                area.append('Missing')
         else:
             area.append('Missing')
     input_data['Area'] = np.asarray(area)

@@ -40,7 +40,7 @@ def logging_updates(rows_before, found_rows, new_rows):
 
 
 def pd_to_csv_file(input_data, csv_name):
-    input_data.to_csv(data_path + 'data/' + csv_name, header=False, index=False)
+    input_data.to_csv(data_path + 'data/' + csv_name, header=True, index=False)
 
 
 def import_local_data():
