@@ -6,6 +6,17 @@
 5. Salary Distribution by Area
 6. Search by ID, Company, State, City
 
+Structure:
+ 1 Index
+    General info (mean, median, std, etc)
+    Distribution Chart (or even a heat map)
+    Top 10 cities plot
+    Top 10 companies
+    Buttons to see by year, state, area or company
+    1.1 what is PERM
+    2.3 BY year or by company (same layout as Index, add a table to see the raw data)
+
+
 To Do:
 1. Scrap the data from visadoor DONE
 2. Bay area cities list

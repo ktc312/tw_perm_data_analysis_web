@@ -15,6 +15,12 @@ data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file_
 base_url = str('http://visadoor.com/greencards/index?country=Taiwan&submit=Search')
 
 
+def raw_data_rows_to_csv(list_data, file_name):
+    with open(data_path + "data/" + file_name, "wb") as f:
+        writer = csv.writer(f)
+        writer.writerows(list_data)
+
+
 # get last_year
 def get_last_year():
     col_names = ['id', 'Decision_Date', 'Employer', 'City_State', 'Case_Status', 'Job_Title', 'Wage_Offer']
@@ -28,7 +34,7 @@ def get_last_year():
 def get_cases_found(last_year):
     cases_found_in_page = 0
     test_search_term = '&year=' + last_year
-    soup = BeautifulSoup(ul.urlopen(base_url + test_search_term, data=None, timeout=5))
+    soup = BeautifulSoup(ul.urlopen(base_url + test_search_term, data=None, timeout=5), "html.parser")
     cases_found_class = soup.findAll("div", {"class": "col-sm-5"})
     for div in cases_found_class:
         cases_found_in_page = int(str(div).split('<h4>')[1].split(' ')[3])
@@ -50,7 +56,7 @@ def scrape_data(last_year, page_count):
     encode_raw_data = []
     while i < page_count:
         search_term = '&year=' + last_year + '&page=' + str(i+1)
-        soup = BeautifulSoup(ul.urlopen(base_url + search_term, data=None, timeout=5))
+        soup = BeautifulSoup(ul.urlopen(base_url + search_term, data=None, timeout=5), "html.parser")
         # get data table
         raw_data = []
         table = soup.find('table', attrs={'class': 'table table-bordered table-striped table-hover'})
@@ -71,9 +77,7 @@ def scrape_data(last_year, page_count):
     while i < len(encode_raw_data):
         encode_raw_data_rows.append(encode_raw_data[i:i+7])
         i += 7
-    with open(data_path+"data/temp_new_data.csv", "wb") as f:
-        writer = csv.writer(f)
-        writer.writerows(encode_raw_data_rows)
+    raw_data_rows_to_csv(encode_raw_data_rows, 'temp_new_data.csv')
 
     col_names = ['id', 'Decision_Date', 'Employer', 'City_State', 'Case_Status', 'Job_Title', 'Wage_Offer']
     new_df = pd.read_csv(data_path + 'data/temp_new_data.csv', names=col_names, dtype=str, skiprows=1)
