@@ -13,7 +13,6 @@ To Do
 1. Build the website
 2. Serve on Heroku
 
-
 License
 =======
 MIT http://g0v.mit-license.org/

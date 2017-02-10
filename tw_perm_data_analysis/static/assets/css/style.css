@@ -33,13 +33,13 @@ h1, h2, h3, h4, h5, h6 {
 
 p { 
 	padding: 0; 
-	margin-bottom: 12px; 
+	margin-bottom: 12px;
     font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	font-size: 18px; 
 	line-height: 28px;
 	color: #666; 
-	margin-top: 10px; 
+	margin-top: 10px;
 }
 
 html,
@@ -149,6 +149,12 @@ input {
 }
 
 
+.top_10_tables{
+	width: 50%;
+	margin-left: 25%;
+	font-size: 16px;
+}
+
 .btn-register {
 	margin-top: 15px;
 	border-radius: 50px;
@@ -221,12 +227,13 @@ input {
 #w {
 	background: white;
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #w .col-md-6 {
 	padding-right: 0px;
+	margin-top: 60px;
 }
 
 #w p {
@@ -239,8 +246,8 @@ input {
 #picton {
 	background: #59ABE3;
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	color: white;
 }
 
@@ -257,8 +264,8 @@ input {
 #curious {
 	background: #3498DB;
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	color: white;
 }
 
@@ -275,8 +282,8 @@ input {
 #malibu {
 	background: #6BB9F0;
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	color: white;
 }
 
@@ -293,8 +300,8 @@ input {
 #jelly {
 	background: #2574A9;
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	color: white;
 }
 
@@ -340,4 +347,7 @@ input {
 	color: darkgray;
 	font-size: 13px;
 	opacity: 0.3;
+	margin-bottom: 8px;
+	line-height: 10px;
+	margin-top: 8px;
 }

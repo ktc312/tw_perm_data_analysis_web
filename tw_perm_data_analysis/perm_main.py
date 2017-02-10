@@ -43,7 +43,10 @@ def test_locally():
 # print end - start
 
 tw_perm_df = test_locally()
+print tw_perm_df.describe()
 
+approved_df = tw_perm_df.loc[tw_perm_df['Case_Status'].isin(['Certified-Expired', 'Certified'])]
+print approved_df.describe()
 # tw_perm_df.plot.density()
 # print tw_perm_df.isnull().sum()
 # print tw_perm_df.loc[tw_perm_df['Salary'] < 16000]

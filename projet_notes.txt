@@ -1,9 +1,9 @@
 台灣人 PERM 薪資分析
 1. Top 10 Companies
 2. Top 10 States
-3. Salary Distribution by Year
-4. Salary Distribution by State
-5. Salary Distribution by Area
+3. Salary Distribution by Area
+4. Salary Distribution by Year
+5. Salary Distribution by State
 6. Search by ID, Company, State, City
 
 Structure:
@@ -16,16 +16,12 @@ Structure:
     1.1 what is PERM
     2.3 BY year or by company (same layout as Index, add a table to see the raw data)
 
-
 To Do:
-1. Scrap the data from visadoor DONE
-2. Bay area cities list
-3. Local outcome functions
-	a. Charts
-	b. Plots
-	c. Searching Function
-4. Build the website locally
-5. Serve with free resource, open source
+1. Build the website locally
+2. Serve with free resource, Open source
+3. Mobile-friendly
 
 PTT - 台灣人申請EB2&EB3的薪資統計
 https://devcenter.heroku.com/articles/deploying-python
+http://docs.celeryproject.org/en/latest/userguide/periodic-tasks.html
+https://github.com/gregmuellegger/django-mobile
