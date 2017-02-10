@@ -1,0 +1,49 @@
+,Count,Salary
+count,,459.0
+mean,,79479.4563399
+std,,27149.6716841
+min,,25000.0
+25%,,59719.0
+50%,,79851.0
+75%,,96000.12
+max,,185000.0
+CA,200.0,
+NY,50.0,
+TX,39.0,
+WA,24.0,
+OR,24.0,
+NJ,13.0,
+MA,12.0,
+IL,12.0,
+OH,8.0,
+NC,7.0,
+NM,,110000.0
+MA,,99656.9266667
+WA,,90227.625
+NC,,88900.1428571
+MD,,88423.4
+OR,,87631.4083333
+FL,,86514.8
+VT,,86299.0
+CA,,83932.21075
+DC,,79163.0
+Intel Corporation,23.0,
+Oracle America Inc.,13.0,
+Microsoft Corporation,8.0,
+Google Inc.,7.0,
+Wafertech LLC.,7.0,
+Qualcomm Technologies Inc.,6.0,
+Tsmc North America,5.0,
+Apple Inc.,5.0,
+Broadcom Corporation,5.0,
+Omnivision Technologies Inc.,4.0,
+Harvard Medical Faculty Physicians At Bidmc Inc.,,185000.0
+Miami University,,175000.0
+Kilpatrick Stockton LLP.,,170000.0
+Jeromy R. Dixson Dmd Ps,,166400.0
+Aaeon Electronics Inc.,,162000.0
+Chandelier Creative Inc.,,158000.0
+Burns & Levinson LLP.,,150000.0
+Morgan Stanley & Co. LLC.,,140000.0
+Synopsys Inc.,,139838.0
+University Of Florida,,138703.0

@@ -1,0 +1,49 @@
+,Count,Salary
+count,,895.0
+mean,,76345.8101341
+std,,28012.167865
+min,,20800.0
+25%,,56363.0
+50%,,72800.0
+75%,,92009.6
+max,,230000.0
+CA,428.0,
+NY,89.0,
+TX,66.0,
+WA,32.0,
+NJ,28.0,
+IL,23.0,
+MA,20.0,
+FL,18.0,
+VA,18.0,
+GA,15.0,
+NH,,198720.0
+HI,,107716.0
+OR,,88631.5733333
+DE,,86000.0
+KY,,85972.5
+SD,,85000.0
+WA,,82272.195
+UT,,81607.2
+CA,,81143.3446028
+PA,,79766.375
+Intel Corporation,13.0,
+Broadcom Corporation,12.0,
+Marvell Semiconductor Inc.,10.0,
+Microsoft Corporation,10.0,
+Wafertech LLC.,8.0,
+Nvidia Corporation,8.0,
+Texas Instruments Incorporated,8.0,
+Qualcomm Inc.,6.0,
+Apple Inc.,6.0,
+Qualcomm Atheros Inc.,5.0,
+White & Case LLP.,,230000.0
+Hospital Medicine Associates LLC.,,198720.0
+Shell Oil Company,,191300.0
+Premier Hospitalist Of Bakersfield Inc.,,190000.0
+King & Spalding LLP.,,185000.0
+Wilson Sonsini Goodrich & Rosati,,170000.0
+Cleary Gottlieb Steen & Hamilton LLP.,,170000.0
+Kaye Scholer LLP.,,166000.0
+Aaeon Electronics Inc.,,162000.0
+University Of Hawaii,,160000.0

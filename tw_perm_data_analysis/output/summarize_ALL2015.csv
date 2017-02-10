@@ -1,0 +1,49 @@
+,Count,Salary
+count,,1020.0
+mean,,85718.7906275
+std,,31050.501081
+min,,16682.0
+25%,,64017.0
+50%,,86008.0
+75%,,106000.0
+max,,240000.0
+CA,539.0,
+NY,101.0,
+TX,72.0,
+OR,50.0,
+NJ,30.0,
+WA,23.0,
+MA,23.0,
+IL,18.0,
+MI,16.0,
+VA,14.0,
+LA,,103676.333333
+CT,,102909.666667
+DE,,94765.8
+VT,,94203.0
+OR,,93503.14
+CA,,93244.500538
+AZ,,93143.1111111
+NH,,92914.0
+MA,,89678.5556522
+WA,,89303.5217391
+Intel Corporation,64.0,
+Google Inc.,39.0,
+Qualcomm Technologies Inc.,19.0,
+Oracle America Inc.,15.0,
+Yahoo Inc.,14.0,
+Apple Inc.,11.0,
+Super Micro Computer Inc.,11.0,
+Facebook Inc.,10.0,
+Broadcom Corporation,9.0,
+Cisco Systems Inc.,9.0,
+Apogee Medical Group Inc,,240000.0
+Perkins Coie Llp,,200000.0
+Sutter North Medical Group,,200000.0
+Jat Capital Management Lp,,200000.0
+White & Case Llp,,185000.0
+Innolux Optoelectronics Usa Inc.,,172058.0
+Med Auction Inc.,,162698.0
+Ccs Design Inc.,,161200.0
+Auto Fit Inc,,161100.0
+Acr Capital Llc.,,157000.0

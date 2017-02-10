@@ -1,0 +1,31 @@
+,Count,Salary
+count,,264.0
+mean,,101535.780265
+std,,28081.3052811
+min,,45822.0
+25%,,83294.5
+50%,,100984.0
+75%,,117426.95
+max,,220000.0
+CA,264.0,
+CA,,101535.780265
+Google Inc.,18.0,
+Apple Inc.,13.0,
+Omnivision Technologies Inc.,11.0,
+Super Micro Computer Inc.,8.0,
+Applied Materials Inc.,6.0,
+Yahoo Inc.,5.0,
+Oracle America Inc.,5.0,
+Intel Corporation,5.0,
+Vmware Inc.,5.0,
+Hermes Microvision Inc.,5.0,
+Netflix,,220000.0
+Nxp Semiconductors Usa Inc.,,188115.0
+Envision Peripherals Inc.,,185400.0
+White & Case Llp,,185000.0
+Arada Systems,,149900.0
+Arm Inc.,,146260.0
+Mediatek Usa Inc.,,142667.0
+Microsoft Corporation,,137118.0
+Ancestry.com,,136032.0
+Smule Inc.,,135000.0

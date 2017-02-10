@@ -1,0 +1,31 @@
+,Count,Salary
+count,,133.0
+mean,,86047.6945865
+std,,26365.8603901
+min,,35755.0
+25%,,65312.0
+50%,,89323.0
+75%,,100000.0
+max,,192026.0
+CA,133.0,
+CA,,86047.6945865
+Cisco Systems Inc.,5.0,
+Microsoft Corporation,4.0,
+Marvell Semiconductor Inc.,3.0,
+Tsmc North America,3.0,
+Mediatek Usa Inc.,3.0,
+Fishman Consulting Group LLC.,2.0,
+Sandisk Corporation,2.0,
+Google Inc.,2.0,
+Pixar,2.0,
+Super Micro Computer Inc.,2.0,
+Applied Wireless Identifications Group Inc.,,192026.0
+Gilead Sciences Inc.,,169850.0
+Tokbox,,135000.0
+Infinera Corporation,,128773.0
+Nvidia Corporation,,125000.0
+Aol Inc.,,124510.0
+Zecco Holdings Inc.,,124509.0
+Cvs Rx Services Inc.,,122595.2
+Splashtop Inc.,,120000.0
+Duff & Phelps LLC.,,119621.0

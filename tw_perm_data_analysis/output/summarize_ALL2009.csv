@@ -1,0 +1,49 @@
+,Count,Salary
+count,,824.0
+mean,,62315.3430825
+std,,21341.8606487
+min,,12000.0
+25%,,46155.2
+50%,,59602.5
+75%,,75000.0
+max,,142000.0
+CA,412.0,
+NY,90.0,
+TX,50.0,
+NJ,38.0,
+MD,25.0,
+IL,24.0,
+WA,20.0,
+VA,19.0,
+MA,17.0,
+FL,13.0,
+MT,,100000.0
+DE,,93000.0
+DC,,82259.6
+WI,,78019.7333333
+MN,,76847.0
+WA,,73630.4
+HI,,70244.0
+OH,,68943.4571429
+NJ,,66755.5947368
+MD,,65826.904
+Super Micro Computer Inc.,12.0,
+Hhi LLC.,8.0,
+Newegg Inc.,6.0,
+Cisco Systems Inc.,6.0,
+Qualcomm Inc.,4.0,
+Wei-chuan U.s.a. Inc.,4.0,
+Dealogic,4.0,
+Crystal Window & Door Systems Ltd.,4.0,
+Advanced Industrial Computer Inc.,4.0,
+Q-edge Corporation,4.0,
+The University Of Chicago,,142000.0
+Bear Stearns & Co. Inc.,,140000.0
+University Of Wisconsin-milwaukee,,140000.0
+Applied Dna Sciences Inc.,,131435.0
+Winbond Electronics Corporation America,,128419.2
+Carroll County Health Department,,126921.6
+Brocade Communications Systems Inc.,,121000.0
+Risk Management Solutions Inc.,,120000.0
+Polypaths LLC.,,120000.0
+Mott Children's Health Center,,120000.0

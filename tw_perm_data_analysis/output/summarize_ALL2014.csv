@@ -1,0 +1,49 @@
+,Count,Salary
+count,,1002.0
+mean,,82914.3783832
+std,,30637.5334472
+min,,16973.0
+25%,,60160.0
+50%,,80831.5
+75%,,100000.0
+max,,250000.0
+CA,492.0,
+NY,95.0,
+TX,78.0,
+WA,37.0,
+OR,36.0,
+NJ,29.0,
+IL,26.0,
+MA,23.0,
+MI,17.0,
+PA,15.0,
+AL,,128430.0
+CT,,112072.2
+MA,,106521.869565
+ND,,103000.0
+WA,,101832.162162
+DC,,90000.0
+NV,,89301.0
+CA,,87899.9381301
+VA,,87424.0
+OR,,87042.8777778
+Intel Corporation,43.0,
+Microsoft Corporation,22.0,
+Google Inc.,20.0,
+Qualcomm Technologies Inc.,14.0,
+Apple Inc.,13.0,
+Broadcom Corporation,12.0,
+Globalfoundries U.s. Inc.,12.0,
+Omnivision Technologies Inc.,11.0,
+Super Micro Computer Inc.,8.0,
+Inteplast Group Ltd.,8.0,
+Jp Morgan Chase & Co,,250000.0
+Vhm Servicesinc. Dba Metrowest Physician Services,,230000.0
+Pulmonary & Medical Associates Of Northern Va,,223163.0
+Netflix,,220000.0
+Nxp Semiconductors Usa Inc.,,188115.0
+Envision Peripherals Inc.,,185400.0
+White & Case Llp,,185000.0
+State University Of New York,,180000.0
+Connecticut Em-i Medical Services Pc,,175000.0
+Txc Technology,,167773.0

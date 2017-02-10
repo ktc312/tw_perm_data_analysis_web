@@ -1,0 +1,49 @@
+,Count,Salary
+count,,1403.0
+mean,,66454.3987598
+std,,24319.5193948
+min,,12708.8
+25%,,49471.0
+50%,,64000.0
+75%,,80244.0
+max,,300000.0
+CA,633.0,
+NY,168.0,
+TX,96.0,
+NJ,69.0,
+MA,44.0,
+FL,38.0,
+WA,38.0,
+IL,36.0,
+PA,30.0,
+MD,22.0,
+DE,,119500.0
+NV,,105377.6
+RI,,103000.0
+ME,,95000.0
+AK,,91998.4
+UT,,84850.5
+MI,,84721.925
+CT,,83331.5
+DC,,81667.75
+MA,,78792.9540909
+Wafertech LLC.,18.0,
+Intel Corporation,14.0,
+Q-edge Corporation,9.0,
+Crystal Window & Door Systems Ltd.,9.0,
+Inteplast Group Ltd.,8.0,
+Ma Laboratories Inc.,7.0,
+Qualcomm Inc.,7.0,
+Cisco Systems Inc.,7.0,
+Google Inc.,7.0,
+Bank Of America,7.0,
+Trinity Health - Michigan D/b/a Saint Mary's Healt,,300000.0
+Haynes And Boone LLP.,,230000.0
+Massachusetts Institute Of Technology,,182000.0
+Umg Recordings Inc.,,160000.01
+Christiana Care,,160000.0
+Pull'r Holding Company LLC.,,150000.0
+Teco-westinghouse Motor Company,,150000.0
+Northwestern University,,150000.0
+University Of Connecticut,,145000.0
+Sharp Healthcare- Metropolitan Medical Campus,,144206.4

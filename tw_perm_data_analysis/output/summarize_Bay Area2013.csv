@@ -1,0 +1,31 @@
+,Count,Salary
+count,,94.0
+mean,,99994.9994681
+std,,20845.1688677
+min,,50648.0
+25%,,83994.795
+50%,,101795.2
+75%,,110487.0
+max,,156532.0
+CA,94.0,
+CA,,99994.9994681
+Google Inc.,6.0,
+Apple Inc.,5.0,
+Tsmc North America,5.0,
+Oracle America Inc.,5.0,
+Omnivision Technologies Inc.,4.0,
+Lam Research Corporation,3.0,
+Super Micro Computer Inc.,3.0,
+Intel Corporation,3.0,
+Live365 Inc.,2.0,
+Marvell Semiconductor Inc.,2.0,
+Synopsys Inc.,,139838.0
+Apple Inc.,,128358.0
+Cadence Design Systems Inc.,,125768.0
+Microsoft Corporation,,125000.0
+Nvidia Corporation,,122500.0
+Google Inc.,,119796.333333
+Kabam,,117500.0
+Applied Materials Inc.,,117243.0
+Intermolecular Inc.,,115000.0
+Qualcomm Technologies Inc.,,113110.4

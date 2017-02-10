@@ -1,0 +1,49 @@
+,Count,Salary
+count,,878.0
+mean,,71183.1217768
+std,,27485.3933534
+min,,23712.0
+25%,,52087.4
+50%,,67444.0
+75%,,85147.75
+max,,315000.0
+CA,366.0,
+NY,115.0,
+TX,77.0,
+WA,57.0,
+NJ,31.0,
+FL,24.0,
+IL,22.0,
+MD,17.0,
+PA,14.0,
+VA,12.0,
+CT,,99583.2
+KY,,97552.0
+KS,,91756.0
+OH,,89864.375
+WA,,85654.9624561
+MN,,84991.75
+DE,,84479.5
+OR,,83140.4666667
+LA,,82663.0
+NY,,75943.7615652
+Microsoft Corporation,46.0,
+World Journal LLC.,8.0,
+Qualcomm Inc.,6.0,
+Formosa Plastics Corporation Texas,6.0,
+Cisco Systems Inc.,5.0,
+Wafertech LLC.,5.0,
+Intel Corporation,5.0,
+Cvs Rx Services Inc.,4.0,
+Q-edge Corporation,4.0,
+Advanced Industrial Computer Inc.,3.0,
+Cleveland Clinic Foundation,,315000.0
+Mesaba Clinic,,219398.0
+T3 Trading Group,,204984.0
+Applied Wireless Identifications Group Inc.,,192026.0
+International Rectifier Corporation,,180000.0
+Gilead Sciences Inc.,,169850.0
+Hh Medstar Health Inc.,,166400.0
+Umg Recordings Inc.,,160000.01
+Montefiore Medical Center,,160000.0
+Ctc Group Inc. Dba Doubletree By Hilton Torrance,,159120.0
