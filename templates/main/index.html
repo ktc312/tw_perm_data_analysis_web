@@ -200,10 +200,10 @@
                         Made by  K.T. Chang | <a href="mailto:ktc312@nyu.edu">ktc312@nyu.edu</a>
                     </p>
                     <p>
-                        資料來源 <a href="http://visadoor.com">visadoor</a> | <a href="/working">原始資料</a> |
+                        資料來源 <a href="http://visadoor.com">visadoor</a> | <a href="https://goo.gl/Djp8Rx">原始資料</a> |
                         <a href="https://github.com/ktc312/tw_perm_data_analysis_web">open source</a>
                     </p>
-                    <p> 最後更新時間： {{ last_update_time }} </p>
+                    <p> 上次更新時間： {{ last_update_time }} </p>
 				</div>
 			</div>
 		</div><! --/container -->
@@ -283,11 +283,13 @@
                         { y: "{{ label.0 }}", a: {{ label.1 }} },
                     {% endfor %}
             ],
-            xkey: "y",
+            xkey: ['y'],
             ykeys: ['a'],
             gridTextColor: '#fff',
             gridLineColor:'#fff',
             labels: ['人數'],
+            barColors: ['#196619'],
+            xLabelMargin: 10
         });
 
         var year_line = Morris.Line({

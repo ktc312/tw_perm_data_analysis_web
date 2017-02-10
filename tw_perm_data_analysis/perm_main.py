@@ -38,21 +38,17 @@ def test_locally():
     sorted_local_df = local_df.sort_values('Decision_Date', ascending=False)
     return sorted_local_df
 
-# start = datetime.datetime.now()
-# update_all_outcome()
-# end = datetime.datetime.now()
-# print end - start
-
-tw_perm_df = test_locally()
-# print tw_perm_df.describe()
-
+update_all_outcome()
+# tw_perm_df = test_locally()
 # approved_df = tw_perm_df.loc[tw_perm_df['Case_Status'].isin(['Certified-Expired', 'Certified'])]
-# print approved_df.describe()
+# print approved_df.describe().head(1)
+# top_ten_com = pd.crosstab(index=tw_perm_df["Company"], columns="Count").sort_values('Count', ascending=False).head(10)
+# print top_ten_com
 
-test = data_cleaning.remove_rare_case(tw_perm_df, 'State', 0.15)
-ave_by_state = test.groupby(['State']).median().sort_values('Salary', ascending=False).head(10)
-print test.groupby(['State']).count()
-print ave_by_state
+# test = data_cleaning.remove_rare_case(tw_perm_df, 'State', 0.15)
+# ave_by_state = test.groupby(['State']).median().sort_values('Salary', ascending=False).head(10)
+# print test.groupby(['State']).count()
+# print ave_by_state
 # tw_perm_df.plot.density()
 # print tw_perm_df.isnull().sum()
 # print tw_perm_df.loc[tw_perm_df['Salary'] < 16000]

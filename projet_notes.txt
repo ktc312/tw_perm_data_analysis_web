@@ -25,6 +25,10 @@ To Do:
 2. Serve with free resource, Open source
 3. Mobile-friendly
 
+Problem:
+1. Can't show ">" or "<" correctly in morris bar chart x label.
+
+
 PTT - 台灣人申請EB2&EB3的薪資統計
 https://devcenter.heroku.com/articles/deploying-python
 http://docs.celeryproject.org/en/latest/userguide/periodic-tasks.html
