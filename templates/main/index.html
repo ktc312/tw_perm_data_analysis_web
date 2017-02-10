@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-</head>
-<body>
-台灣人 PERM 薪資分析
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% load static from staticfiles %}
+    <link rel="icon" href="{% static 'assets/img/favicon.ico' %}">
 
-</body>
+    <title>Taiwanese PERM Statistics</title>
+
+    <!-- Bootstrap core CSS -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+
+    <!-- Custom styles for this template -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/custom-animations.css' %}">
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "assets/js/ie10-viewport-bug-workaround.js" %}"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+	<! -- ********** HEADER ********** -->
+	<div id="h">
+		<div class="container">
+			<div class="row">
+			    <li>
+                    <button class="btn btn-lg btn-info btn-register" id="qa_button" href="QA">
+                    What's PERM?</button>
+                </li>
+			    <div class="col-md-10 col-md-offset-1 mt">
+			    	<h3>Taiwanese PERM Statistics</h3>
+			    	<h1 class="mb">台灣人 PERM 薪資統計</h1>
+			    </div>
+			    <div class="col-md-12 mt hidden-xs">
+                    <img src="{% static "assets/img/graph.png" %}" class="img-responsive aligncenter" alt=""
+                         data-effect="slide-bottom">
+			    </div>
+			</div>
+		</div><! --/container -->
+	</div><! --/h -->
+
+	<! -- ********** FIRST ********** -->
+	<div id="w">
+		<div class="row nopadding">
+			<div class="col-md-5 col-md-offset-1 mt">
+				<h4>Top 10 Companies</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="mt"><button class="btn btn-info btn-theme" id="more_1">more</button></p>
+			</div>
+
+			<div class="col-md-6 pull-right">
+                <img src="{% static "assets/img/shot01.png" %}" class="img-responsive aligncenter" alt=""
+                         data-effect="slide-right">
+			</div>
+		</div><! --/row -->
+	</div><! --/container -->
+
+
+	<! -- ********** BLUE SECTION - PICTON ********** -->
+	<div id="picton">
+		<div class="row nopadding">
+			<div class="col-md-6 pull-left">
+                <img src="{% static "assets/img/shot02.png" %}" class="img-responsive aligncenter" alt=""
+                         data-effect="slide-left">
+			</div>
+			<div class="col-md-5 mt">
+				<h4>Top 10 States</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="mt"><button class="btn btn-white btn-theme" id="more_2">more</button></p>
+			</div>
+
+		</div><! --row -->
+	</div><! --/Picton -->
+
+
+	<! -- ********** BLUE SECTION - CURIOUS ********** -->
+	<div id="curious">
+		<div class="row nopadding">
+			<div class="col-md-5 col-md-offset-1 mt">
+				<h4>Salary Distribution in New York Metro Area</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="mt"><button class="btn btn-white btn-theme" id="more_3">more</button></p>
+			</div>
+
+			<div class="col-md-6 pull-right">
+                <img src="{% static "assets/img/shot03.png" %}" class="img-responsive aligncenter" alt=""
+                         data-effect="slide-right">
+			</div>
+		</div><! --/row -->
+	</div><! --/curious -->
+
+	<! -- ********** BLUE SECTION - MALIBU ********** -->
+	<div id="malibu">
+		<div class="row nopadding">
+			<div class="col-md-6 pull-left">
+                <img src="{% static "assets/img/shot04.png" %}" class="img-responsive aligncenter" alt=""
+                         data-effect="slide-left">
+			</div>
+			<div class="col-md-5 mt">
+				<h4>Salary Distribution by Year</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="mt"><button class="btn btn-white btn-theme" id="more_4">more</button></p>
+			</div>
+
+		</div><! --row -->
+	</div><! --/Malibu -->
+
+
+	<! -- ********** BLUE SECTION - JELLY ********** -->
+	<div id="jelly">
+		<div class="row nopadding">
+			<div class="col-md-5 col-md-offset-1 mt">
+				<h4>Salary Distribution by State</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p class="mt"><button class="btn btn-white btn-theme" id="more_5">more</button></p>
+			</div>
+
+			<div class="col-md-6 mt centered">
+				<h1 data-effect="slide-bottom">24</h1>
+				<h3>Cases</h3>
+			</div>
+		</div><! --/row -->
+	</div><! --/Jelly -->
+
+	<! -- ********** FOOTER ********** -->
+	<div id="c">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 centered">
+					<p>Copyright 2014 | LandingSumo.com</p>
+				</div>
+			</div>
+		</div><! --/container -->
+	</div><! --/C -->
+    <a style="display: none" id="to_QA" href="/QA"></a>
+    <a style="display: none" id="to_working" href="/working"></a>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/retina-1.1.0.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery.unveilEffects.js" %}"></script>
+    <script type="text/javascript">
+
+        window.onload = init;
+
+        function init(){
+            var qa_button = document.getElementById("qa_button");
+            var more_1 = document.getElementById("more_1");
+            var more_2 = document.getElementById("more_2");
+            var more_3 = document.getElementById("more_3");
+            var more_4 = document.getElementById("more_4");
+            var more_5 = document.getElementById("more_5");
+            qa_button.onclick = to_qa_page;
+            more_1.onclick = to_working_page;
+            more_2.onclick = to_working_page;
+            more_3.onclick = to_working_page;
+            more_4.onclick = to_working_page;
+            more_5.onclick = to_working_page;
+        }
+        function to_qa_page() {
+            document.getElementById('to_QA').click();
+        }
+        function to_working_page() {
+            document.getElementById('to_working').click();
+        }
+    </script>
+  </body>
 </html>

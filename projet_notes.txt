@@ -1,6 +1,6 @@
 台灣人 PERM 薪資分析
-1. Top 10 Cities
-2. Top 10 Companies
+1. Top 10 Companies
+2. Top 10 States
 3. Salary Distribution by Year
 4. Salary Distribution by State
 5. Salary Distribution by Area

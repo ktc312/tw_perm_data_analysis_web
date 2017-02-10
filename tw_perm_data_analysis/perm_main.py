@@ -37,7 +37,10 @@ def test_locally():
     sorted_local_df = local_df.sort_values('Decision_Date', ascending=False)
     return sorted_local_df
 
+# start = datetime.datetime.now()
 # update_all_outcome()
+# end = datetime.datetime.now()
+# print end - start
 
 tw_perm_df = test_locally()
 
