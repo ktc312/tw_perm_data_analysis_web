@@ -5,13 +5,13 @@
 目前進度
 ========
 1. Scraping the data from visadoor(http://visadoor.com)
-2. Basic data cleaning 
+2. Basic data cleaning
+3. Outcome functions
 
 To Do
 ========
-1. Outcome functions
-2. Build the website
-3. Serve on Heroku
+1. Build the website
+2. Serve on Heroku
 
 
 License
