@@ -120,3 +120,18 @@ def clear_nan_value(input_data):
     input_data['State'] = input_data['State'].replace({'-999': np.nan})
     input_data['Salary'] = input_data['Salary'].replace({'-999': np.nan})
     input_data['Area'] = input_data['Area'].replace({'-999': np.nan})
+
+
+# Remove Rare Cases in Pandas Data Frame
+def remove_rare_case(input_data, col_name, freq):
+    col = col_name
+    bin_freq = float(freq) / float(100)
+    filtered_df = pd.DataFrame()
+    for i in input_data[col].unique():
+        counts = input_data[input_data[col] == i].count()[col]
+        total_counts = input_data[col].count()
+        freq = float(counts) / float(total_counts)
+
+        if freq > bin_freq:
+            filtered_df = pd.concat([input_data[input_data[col] == i], filtered_df])
+    return filtered_df

@@ -1,6 +1,7 @@
 # __author__ = 'ktc312'
 from import_data import import_main
 import pandas as pd
+import numpy as np
 import data_cleaning
 import perm_output
 import datetime
@@ -43,10 +44,15 @@ def test_locally():
 # print end - start
 
 tw_perm_df = test_locally()
-print tw_perm_df.describe()
+# print tw_perm_df.describe()
 
-approved_df = tw_perm_df.loc[tw_perm_df['Case_Status'].isin(['Certified-Expired', 'Certified'])]
-print approved_df.describe()
+# approved_df = tw_perm_df.loc[tw_perm_df['Case_Status'].isin(['Certified-Expired', 'Certified'])]
+# print approved_df.describe()
+
+test = data_cleaning.remove_rare_case(tw_perm_df, 'State', 0.15)
+ave_by_state = test.groupby(['State']).median().sort_values('Salary', ascending=False).head(10)
+print test.groupby(['State']).count()
+print ave_by_state
 # tw_perm_df.plot.density()
 # print tw_perm_df.isnull().sum()
 # print tw_perm_df.loc[tw_perm_df['Salary'] < 16000]

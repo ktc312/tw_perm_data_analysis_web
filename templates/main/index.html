@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    {% load static from staticfiles %}
-    <link rel="icon" href="{% static 'assets/img/favicon.ico' %}">
 
     <title>Taiwanese PERM Statistics</title>
 
     <!-- Bootstrap core CSS -->
     {% load static from staticfiles %}
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
-
     <!-- Custom styles for this template -->
     {% load static from staticfiles %}
     <link rel="stylesheet" href="{% static 'assets/css/custom-animations.css' %}">
@@ -62,42 +59,18 @@
 		<div class="row nopadding">
 			<div class="col-md-5 col-md-offset-1 mt">
 				<h4>Top 10 Companies</h4>
-				<p>2007 年十月至 X_input_X 年 X_input_X 月，共有 X_input_X PERM 案件資料，其中 X_input_X 件通過審查。</p>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ total_perm }} PERM 案件資料，
+                    其中 {{ approved_perm }} 件通過審查。</p>
 				<p>以下為前十最多申請件數的公司：</p>
 				<table class="top_10_tables">
                     <tr>
                         <th>公司</th><th>件數</th><th>比例</th>
                     </tr>
-                    <tr>
-                        <td>1</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>2</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>3</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>4</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>5</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>6</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>7</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>8</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>9</td><td>1</td><td>1</td>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>1</td><td>1</td>
-                    </tr>
+                    {% for label in top_10_com_count %}
+                        <tr >
+                            <td>{{ label.0 }}</td><td>{{ label.1 }}</td><td>{{ label.2 }}</td>
+                        </tr>
+                    {% endfor %}
                 </table>
 				<p class="mt"><button class="btn btn-info btn-theme" id="more_1">more</button></p>
 			</div>
@@ -112,14 +85,24 @@
 	<! -- ********** BLUE SECTION - PICTON ********** -->
 	<div id="picton">
 		<div class="row nopadding">
-			<div class="col-md-6 pull-left">
+			<div class="col-md-6 pull-left" style="margin-top: 100px;">
                 <div id="top_10_state_donut" class="img-responsive aligncenter" alt="" data-effect="slide-left"></div>
 			</div>
 			<div class="col-md-5 mt">
 				<h4>Top 10 States</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ total_perm }} PERM 案件資料，
+                    其中 {{ approved_perm }} 件通過審查。</p>
+				<p>以下為前十最多申請件數的州：</p>
+                <table class="top_10_tables">
+                    <tr>
+                        <th>州</th><th>件數</th><th>比例</th>
+                    </tr>
+                    {% for label in top_10_state_count %}
+                        <tr >
+                            <td>{{ label.0 }}</td><td>{{ label.1 }}</td><td>{{ label.2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
 				<p class="mt"><button class="btn btn-white btn-theme" id="more_2">more</button></p>
 			</div>
 
@@ -132,15 +115,34 @@
 		<div class="row nopadding">
 			<div class="col-md-5 col-md-offset-1 mt">
 				<h4>Salary Distribution in New York Metro Area</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-				<p class="mt"><button class="btn btn-white btn-theme" id="more_3">more</button></p>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ approved_perm }} 件 PERM 案件通過審查，
+                    其中 {{ ny_perm }} 件來自大紐約地區。</p>
+                <p>以下為大紐約地區的概括統計：</p>
+                <table class="top_10_tables">
+                    <tr>
+                        <th> </th><th>薪資</th>
+                    </tr>
+                    <tr>
+                        <td>平均數</td><td>{{ ny_mean }}</td>
+                    </tr>
+                    <tr>
+                        <td>中位數</td><td>{{ ny_median }}</td>
+                    </tr>
+                    <tr>
+                        <td>標準差</td><td>{{ ny_std }}</td>
+                    </tr>
+                    <tr>
+                        <td>最低</td><td>{{ ny_min }}</td>
+                    </tr>
+                    <tr>
+                        <td>最高</td><td>{{ ny_max }}</td>
+                    </tr>
+                </table>
+                <p class="mt"><button class="btn btn-white btn-theme" id="more_3">more</button></p>
 			</div>
 
 			<div class="col-md-6 pull-right">
-                <img src="{% static "assets/img/shot03.png" %}" class="img-responsive aligncenter" alt=""
-                         data-effect="slide-right">
+                <div id="NY_bar" class="img-responsive aligncenter" alt="" data-effect="slide-right"></div>
 			</div>
 		</div><! --/row -->
 	</div><! --/curious -->
@@ -149,15 +151,13 @@
 	<div id="malibu">
 		<div class="row nopadding">
 			<div class="col-md-6 pull-left">
-                <img src="{% static "assets/img/shot04.png" %}" class="img-responsive aligncenter" alt=""
-                         data-effect="slide-left">
+                <div id="Year_line" class="img-responsive aligncenter" alt="" data-effect="slide-left"></div>
 			</div>
 			<div class="col-md-5 mt">
 				<h4>Salary Distribution by Year</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-				<p class="mt"><button class="btn btn-white btn-theme" id="more_4">more</button></p>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ approved_perm }} 件 PERM 案件通過審查，
+                    左圖為歷年平均薪資。</p>
+                <p class="mt"><button class="btn btn-white btn-theme" id="more_4">more</button></p>
 			</div>
 
 		</div><! --row -->
@@ -169,15 +169,24 @@
 		<div class="row nopadding">
 			<div class="col-md-5 col-md-offset-1 mt">
 				<h4>Salary Distribution by State</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-				<p class="mt"><button class="btn btn-white btn-theme" id="more_5">more</button></p>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ approved_perm }} 件 PERM 案件通過審查。</p>
+                <p>以下為薪資中位數最高的前十州：</p>
+                <table class="top_10_tables">
+                    <tr>
+                        <th>州</th><th>薪資平均數</th><th>薪資中位數</th>
+                    </tr>
+                    {% for label in top_10_state_mean %}
+                        <tr >
+                            <td>{{ label.0 }}</td><td>{{ label.1 }}</td><td>{{ label.2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <p class="mt"><button class="btn btn-white btn-theme" id="more_5">more</button></p>
 			</div>
 
-			<div class="col-md-6 mt centered">
-				<h1 data-effect="slide-bottom">24</h1>
-				<h3>Cases</h3>
+			<div class="col-md-6 mt centered" style="margin-top: 150px;">
+				<h1 data-effect="slide-bottom">$ {{ top_state_median }}</h1>
+				<h3>{{ top_state_name }}</h3>
 			</div>
 		</div><! --/row -->
 	</div><! --/Jelly -->
@@ -194,7 +203,7 @@
                         資料來源 <a href="http://visadoor.com">visadoor</a> | <a href="/working">原始資料</a> |
                         <a href="https://github.com/ktc312/tw_perm_data_analysis_web">open source</a>
                     </p>
-                    <p> 最後更新時間： X_input_X </p>
+                    <p> 最後更新時間： {{ last_update_time }} </p>
 				</div>
 			</div>
 		</div><! --/container -->
@@ -239,16 +248,20 @@
 
         var com_graph = Morris.Donut({
             element: 'top_10_com_donut',
-            data: [{label: "Test 1", value: 60},
-                   {label: "Test 2", value: 30},
-                   {label: "Test 3", value: 10}]
+            data: [
+                {% for label in top_10_com_count %}
+                    { label: '{{ label.0 }}', value: {{ label.1 }} },
+                {% endfor %}
+            ]
         });
 
         var state_graph = Morris.Donut({
             element: 'top_10_state_donut',
-            data: [{label: "Test 1", value: 30},
-                   {label: "Test 2", value: 60},
-                   {label: "Test 3", value: 10}],
+            data: [
+                {% for label in top_10_state_count %}
+                    { label: '{{ label.0 }}', value: {{ label.1 }} },
+                {% endfor %}
+            ],
             backgroundColor: '#59ABE3',
             labelColor: '#fff',
             colors: ['#145214',
@@ -261,6 +274,34 @@
                      '#5cd65c',
                      '#70db70',
                      '#85e085']
+        });
+
+        var ny_bar = Morris.Bar({
+            element: 'NY_bar',
+            data: [
+                    {% for label in ny_salary_dis %}
+                        { y: "{{ label.0 }}", a: {{ label.1 }} },
+                    {% endfor %}
+            ],
+            xkey: "y",
+            ykeys: ['a'],
+            gridTextColor: '#fff',
+            gridLineColor:'#fff',
+            labels: ['人數'],
+        });
+
+        var year_line = Morris.Line({
+            element: 'Year_line',
+            data: [
+                    {% for label in years_mean_median %}
+                        { y: "{{ label.0 }}", a: {{ label.1 }}, b:{{ label.2 }} },
+                    {% endfor %}
+            ],
+            xkey: 'y',
+            ykeys: ['a', 'b'],
+            gridTextColor: '#fff',
+            gridLineColor:'#fff',
+            labels: ['平均', '中位數']
         });
     </script>
   </body>
