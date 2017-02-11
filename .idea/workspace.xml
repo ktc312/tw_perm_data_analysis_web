@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12b79997-73bc-44d8-8079-6d6c7e91da2e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/web_functions.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/web_functions.py" />
     </list>
     <ignored path="tw_perm_data_analysis_web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -883,7 +882,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486843441056</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fix state names 2">
+      <created>1486843726086</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1486843726086</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -973,7 +979,8 @@
     <MESSAGE value="add all outcomes" />
     <MESSAGE value="basic site pages finished" />
     <MESSAGE value="fix state names" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix state names" />
+    <MESSAGE value="fix state names 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix state names 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
