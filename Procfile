@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn tw_perm_data_analysis_web.wsgi --log-file -
