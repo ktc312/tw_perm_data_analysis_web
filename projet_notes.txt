@@ -17,11 +17,8 @@ Structure:
     2.3 BY year or by company (same layout as Index, add a table to see the raw data)
 
 To Do:
-1. Build the website locally
-    a. finish QA page
-    b. finish coming soon page
-2. Serve with free resource, Open source
-3. Mobile-friendly
+1. Serve with free resource, Open source
+2. Mobile-friendly
 
 Problem:
 1. Can't show ">" or "<" correctly in morris bar chart x label.

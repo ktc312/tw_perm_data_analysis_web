@@ -10,8 +10,7 @@
 
 To Do
 ========
-1. Build the website
-2. Serve on Heroku
+1. Serve on Heroku
 
 License
 =======
