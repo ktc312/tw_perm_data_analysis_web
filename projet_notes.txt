@@ -18,10 +18,8 @@ Structure:
 
 To Do:
 1. Build the website locally
-    a. 修改 perm_output.py 與 perm_main.py
-    b. views.py 讀取資料至 context
-    c. finish QA page
-    d. finish coming soon page
+    a. finish QA page
+    b. finish coming soon page
 2. Serve with free resource, Open source
 3. Mobile-friendly
 

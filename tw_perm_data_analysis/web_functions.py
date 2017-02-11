@@ -94,3 +94,68 @@ def read_top_ten_state():
                 new_list.append(i[2])
         out_list.append(new_list)
     return out_list
+
+
+def read_ny_salary_all():
+    with open(data_path + 'output/ny_salary_all.csv') as f:
+        the_list = [line.rstrip('\n') for line in f]
+    the_list.pop(0)
+    out_list = list()
+    for i in the_list:
+        short_list = list()
+        short_list.append(i.split('"')[1])
+        short_list.append(i.split('"')[2][1:])
+        out_list.append(short_list)
+    return out_list
+
+
+def read_all_yr_means():
+    with open(data_path + 'output/all_yr_means.csv') as f:
+        the_list = [line.rstrip('\n') for line in f]
+    out_list = list()
+    for i in the_list:
+        short_list = list()
+        short_list.append(i.split(',')[0][2:-1])
+        short_list.append(i.split(',')[1][1:])
+        short_list.append(i.split(',')[2][1:-1])
+        out_list.append(short_list)
+    return out_list
+
+
+def read_top_10_state_mean():
+    with open(data_path + 'output/ave_by_state.csv') as f:
+        the_list = [line.rstrip('\n') for line in f]
+    the_list.pop(0)
+    with open(data_path + 'data/State_list.csv') as f:
+        the_s_list = [line.rstrip('\n') for line in f]
+        state_list = list()
+        for i in the_s_list:
+            state_list.append(i[:-1])
+    out_list = list()
+    for i in the_list:
+        new_list = list()
+        for x in state_list:
+            if i.split(',')[0] == x[:2]:
+                new_list.append(x[3:])
+                new_list.append(str(round(float(i.split(',')[1]), 2)))
+                new_list.append(i.split(',')[2])
+        out_list.append(new_list)
+    return out_list
+
+
+def read_top_median_state():
+    with open(data_path + 'output/top_median_state.csv') as f:
+        the_list = [line.rstrip('\n') for line in f]
+    the_list.pop(0)
+    with open(data_path + 'data/State_list.csv') as f:
+        the_s_list = [line.rstrip('\n') for line in f]
+        state_list = list()
+        for i in the_s_list:
+            state_list.append(i[:-1])
+    out_list = list()
+    for i in the_list:
+        for x in state_list:
+            if i.split(',')[0] == x[:2]:
+                out_list.append(x[3:])
+                out_list.append(i.split(',')[1])
+    return out_list

@@ -118,7 +118,33 @@ def index(request):
         print "<p>Error: %s</p>" % e
 
     try:
+        context['ny_salary_dis'] = web_functions.read_ny_salary_all()
+    except:
+        e = sys.exc_info()[0]
+        print "<p>Error: %s</p>" % e
+
+    try:
         context['last_update_time'] = web_functions.read_csv_to_list('data/update_log.csv')[0][1]
+    except:
+        e = sys.exc_info()[0]
+        print "<p>Error: %s</p>" % e
+
+    try:
+        context['years_mean_median'] = web_functions.read_all_yr_means()
+    except:
+        e = sys.exc_info()[0]
+        print "<p>Error: %s</p>" % e
+
+    try:
+        context['top_10_state_mean'] = web_functions.read_top_10_state_mean()
+    except:
+        e = sys.exc_info()[0]
+        print "<p>Error: %s</p>" % e
+
+    try:
+        top_median_state = web_functions.read_top_median_state()
+        context['top_state_name'] = top_median_state[0]
+        context['top_state_median'] = top_median_state[1]
     except:
         e = sys.exc_info()[0]
         print "<p>Error: %s</p>" % e

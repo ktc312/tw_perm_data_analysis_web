@@ -39,16 +39,19 @@ def test_locally():
     return sorted_local_df
 
 update_all_outcome()
+
+
 # tw_perm_df = test_locally()
 # approved_df = tw_perm_df.loc[tw_perm_df['Case_Status'].isin(['Certified-Expired', 'Certified'])]
+# remove_rare_state = data_cleaning.remove_rare_case(approved_df, 'State', 0.15)
+# top_median_state = remove_rare_state.groupby(['State']).median().sort_values('Salary', ascending=False).head(1)
+# top_median_state.rename(columns={'Salary': 'median'}, inplace=True)
+# print top_median_state
 # print approved_df.describe().head(1)
 # top_ten_com = pd.crosstab(index=tw_perm_df["Company"], columns="Count").sort_values('Count', ascending=False).head(10)
 # print top_ten_com
 
-# test = data_cleaning.remove_rare_case(tw_perm_df, 'State', 0.15)
-# ave_by_state = test.groupby(['State']).median().sort_values('Salary', ascending=False).head(10)
-# print test.groupby(['State']).count()
-# print ave_by_state
+
 # tw_perm_df.plot.density()
 # print tw_perm_df.isnull().sum()
 # print tw_perm_df.loc[tw_perm_df['Salary'] < 16000]
