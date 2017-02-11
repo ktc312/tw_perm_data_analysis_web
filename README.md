@@ -7,10 +7,11 @@
 1. Scraping the data from visadoor(http://visadoor.com)
 2. Basic data cleaning
 3. Outcome functions
+4. Serve on Heroku
 
 To Do
 ========
-1. Serve on Heroku
+1. 自動定期更新資料
 
 License
 =======
