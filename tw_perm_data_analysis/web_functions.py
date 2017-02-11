@@ -130,7 +130,7 @@ def read_top_10_state_mean():
         the_s_list = [line.rstrip('\n') for line in f]
         state_list = list()
         for i in the_s_list:
-            state_list.append(i[:-1])
+            state_list.append(i)
     out_list = list()
     for i in the_list:
         new_list = list()
@@ -151,7 +151,7 @@ def read_top_median_state():
         the_s_list = [line.rstrip('\n') for line in f]
         state_list = list()
         for i in the_s_list:
-            state_list.append(i[:-1])
+            state_list.append(i)
     out_list = list()
     for i in the_list:
         for x in state_list:
