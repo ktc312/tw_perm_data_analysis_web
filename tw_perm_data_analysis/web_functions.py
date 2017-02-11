@@ -83,7 +83,7 @@ def read_top_ten_state():
         the_list = [line.rstrip('\n') for line in f]
         state_list = list()
         for i in the_list:
-            state_list.append(i[:-1])
+            state_list.append(i)
     out_list = list()
     for i in final_list:
         new_list = list()
