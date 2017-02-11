@@ -25,7 +25,7 @@ SECRET_KEY = '#yz0jtm)=q3imax1zg*nca_=f(79o!k+%904-l%ww3zr)!o1gs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['secret-citadel-19877.herokuapp.com', 'secret-citadel-19877']
 
 
 # Application definition
