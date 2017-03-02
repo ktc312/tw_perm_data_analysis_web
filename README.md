@@ -12,6 +12,8 @@
 To Do
 ========
 1. 自動定期更新資料
+2. Mobile-friendly index
+3. H1B 資料
 
 License
 =======

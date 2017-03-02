@@ -17,13 +17,14 @@ Structure:
     2.3 BY year or by company (same layout as Index, add a table to see the raw data)
 
 To Do:
-1. 千位數逗點，數字靠右，add dollar sign
-2. add all five "more" pages
-3. rewrite all web functions
+1. 整理 request.GET & context
+2. rewrite all web functions
+3. 千位數逗點，數字靠右，add dollar sign
 4. Mobile-friendly index
-5. more plz use desk top version
+5. mobile more go to "plz use desk top version"
 6. write periodic task function, update data once a week
-7. prevailing wage level, amount and zip code is available, re-scrap the data to draw heat maps?
+7. redeploy
+8. prevailing wage level, amount and zip code is available, re-scrap the data to draw heat maps?
 
 
 Problem:
