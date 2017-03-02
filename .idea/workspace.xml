@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12b79997-73bc-44d8-8079-6d6c7e91da2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/92ccb871-3d60-456f-b6c2-d2a81ff4043b.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/92ccb871-3d60-456f-b6c2-d2a81ff4043b/storage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-exported-files.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/main/by_area_yr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/main/by_state_more.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/main/by_yr_more.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/main/top_com_yr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/main/top_state_yr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/static/assets/css/by_area.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/static/assets/css/by_state.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/static/assets/css/by_yr.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/static/assets/css/top_10_states.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/KTC.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/KTC.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tw_perm_data_analysis_web.iml" afterPath="$PROJECT_DIR$/.idea/tw_perm_data_analysis_web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projet_notes.txt" afterPath="$PROJECT_DIR$/projet_notes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/index.html" afterPath="$PROJECT_DIR$/templates/main/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/data/TW_PERM.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/data/TW_PERM.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/data/temp_new_data.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/data/temp_new_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/data/update_log.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/data/update_log.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/download_data.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/download_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/all_yr_means.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/all_yr_means.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/ave_by_state.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/ave_by_state.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/ny_salary_all.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/ny_salary_all.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ALL2016.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ALL2016.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ALL2017.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ALL2017.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ALLALL.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ALLALL.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_Bay Area2016.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_Bay Area2016.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_Bay AreaALL.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_Bay AreaALL.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_New York Metro2016.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_New York Metro2016.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_New York MetroALL.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_New York MetroALL.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_main.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_main.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ny.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/summarize_ny.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/top_ten_com.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/top_ten_com.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/output/top_ten_state.csv" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/output/top_ten_state.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/static/assets/css/style.css" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/static/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/tests.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/views.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis/web_functions.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis/web_functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis_web/settings.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis_web/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tw_perm_data_analysis_web/urls.py" afterPath="$PROJECT_DIR$/tw_perm_data_analysis_web/urls.py" />
     </list>
     <ignored path="tw_perm_data_analysis_web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -952,7 +907,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486843726086</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add all templates">
+      <created>1488491479279</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1488491479279</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -1064,7 +1026,8 @@
     <MESSAGE value="basic site pages finished" />
     <MESSAGE value="fix state names" />
     <MESSAGE value="fix state names 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix state names 2" />
+    <MESSAGE value="add all templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
