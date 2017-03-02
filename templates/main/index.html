@@ -209,6 +209,11 @@
 		</div><! --/container -->
 	</div><! --/C -->
     <a style="display: none" id="to_QA" href="/QA"></a>
+    <a style="display: none" id="to_Top_10_Companies_by_year" href="/Top_10_Companies_by_year"></a>
+    <a style="display: none" id="to_Top_10_States_by_year" href="/Top_10_States_by_year"></a>
+    <a style="display: none" id="to_by_area_and_year" href="/By_area_and_year"></a>
+    <a style="display: none" id="to_by_year_more" href="/By_year_more"></a>
+    <a style="display: none" id="to_by_state_more" href="/By_state_more"></a>
     <a style="display: none" id="to_working" href="/working"></a>
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -233,14 +238,29 @@
             var more_4 = document.getElementById("more_4");
             var more_5 = document.getElementById("more_5");
             qa_button.onclick = to_qa_page;
-            more_1.onclick = to_working_page;
-            more_2.onclick = to_working_page;
-            more_3.onclick = to_working_page;
-            more_4.onclick = to_working_page;
-            more_5.onclick = to_working_page;
+            more_1.onclick = to_Top_10_Companies_by_year;
+            more_2.onclick = to_Top_10_States_by_year;
+            more_3.onclick = to_by_area_and_year;
+            more_4.onclick = to_by_year_more;
+            more_5.onclick = to_by_state_more;
         }
         function to_qa_page() {
             document.getElementById('to_QA').click();
+        }
+        function to_Top_10_Companies_by_year() {
+            document.getElementById('to_Top_10_Companies_by_year').click();
+        }
+        function to_Top_10_States_by_year() {
+            document.getElementById('to_Top_10_States_by_year').click();
+        }
+        function to_by_area_and_year() {
+            document.getElementById('to_by_area_and_year').click();
+        }
+        function to_by_year_more() {
+            document.getElementById('to_by_year_more').click();
+        }
+        function to_by_state_more() {
+            document.getElementById('to_by_state_more').click();
         }
         function to_working_page() {
             document.getElementById('to_working').click();

@@ -1,31 +1,31 @@
 ,Count,Salary
-count,,301.0
-mean,,107503.185847
-std,,33228.5223122
+count,,376.0
+mean,,108149.841702
+std,,33155.1963509
 min,,18720.0
-25%,,88442.0
+25%,,88635.5
 50%,,109762.0
-75%,,125965.0
+75%,,130000.0
 max,,220251.0
-CA,301.0,
-CA,,107503.185847
-Google Inc.,19.0,
-Yahoo Inc.,14.0,
-Apple Inc.,13.0,
+CA,376.0,
+CA,,108149.841702
+Google Inc.,27.0,
+Apple Inc.,18.0,
+Yahoo Inc.,15.0,
+Super Micro Computer Inc.,12.0,
 Pacpizzallc,12.0,
-Super Micro Computer Inc.,10.0,
-Intel Corporation,7.0,
-Hermes Microvision Inc.,7.0,
-Broadcom Corporation,6.0,
-Mediatek Usa Inc.,5.0,
-Applied Materials Inc.,5.0,
+Intel Corporation,10.0,
+Mediatek Usa Inc.,9.0,
+Hermes Microvision Inc.,8.0,
+Facebook Inc.,8.0,
+Nvidia Corporation,6.0,
 Prophetstor Data Services Inc,,220251.0
+Cienet Technologies Inc,,213803.0
 Grifols Diagnostic Solutions,,190620.0
 Credit Suisse Securities (usa) Llc,,175000.0
+Western Digital Technologies Inc.,,163728.0
 Yourpeople Inc. D/b/a Zenefits,,160000.0
 American Sunrex Corp,,159182.0
-Apple Inc.,,154777.615385
 Cadence Design Systems Inc.,,153610.0
 Codeobjects Inc.,,152776.0
-Synaptics Inc,,150030.0
-Aliphcom,,148803.0
+Apple Inc.,,152339.388889

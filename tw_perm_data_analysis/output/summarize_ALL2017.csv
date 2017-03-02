@@ -1,15 +1,19 @@
 ,Count,Salary
-count,,2.0
-mean,,123836.0
-std,,1646.1445866
-min,,122672.0
-25%,,123254.0
-50%,,123836.0
-75%,,124418.0
+count,,3.0
+mean,,119224.0
+std,,8072.57877013
+min,,110000.0
+25%,,116336.0
+50%,,122672.0
+75%,,123836.0
 max,,125000.0
 CA,2.0,
+NV,1.0,
 CA,,123836.0
+NV,,110000.0
+Aruze Gaming America Inc.,1.0,
 Ooyala Inc.,1.0,
 Sandisk Corporation,1.0,
 Ooyala Inc.,,125000.0
 Sandisk Corporation,,122672.0
+Aruze Gaming America Inc.,,110000.0

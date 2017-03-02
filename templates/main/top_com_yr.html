@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 10 companies by year</title>
+
+    <!-- Bootstrap core CSS -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    <!-- Custom styles for this template -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/custom-animations.css' %}">
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "assets/js/ie10-viewport-bug-workaround.js" %}"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="w">
+		<div class="row nopadding">
+			<div class="col-md-5 col-md-offset-1 mt">
+				<h4>Top 10 Companies</h4>
+                <form name="yrs" action="{% url "top_com_yr" %}" method="get">
+                    <table class="input_yr">
+                        <tr>
+                            <th>
+                                From:&nbsp;
+                            </th>
+                            <th>
+                                <select name="start_yr" id="start_yr" onchange="start_yr_change()">
+                                    {% for label in yr_list %}
+                                        {% if forloop.first %}
+                                        <option value= {{ label }} selected="selected">{{ label }}</option>
+                                        {% else %}
+                                        <option value= {{ label }}>{{ label }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </th>
+                            <th>
+                                To:&nbsp;
+                            </th>
+                            <th>
+                                <select name="end_yr" id="end_yr" onchange="end_yr_change()">
+                                    {% for label in yr_list %}
+                                        {% if forloop.last %}
+                                        <option value= {{ label }} selected="selected">{{ label }}</option>
+                                        {% else %}
+                                        <option value= {{ label }}>{{ label }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </th>
+                            <th>
+                                <button name="Search" id="Search">&nbsp;Search&nbsp;</button>
+                            </th>
+                        </tr>
+                    </table>
+                </form>
+
+				<p>{{ start_year }} 年 {{ start_mon }}  月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ total_perm }} PERM 案件資料，
+                    其中 {{ approved_perm }} 件通過審查。</p>
+				<p>以下為前十最多申請件數的公司：</p>
+				<table class="top_10_tables">
+                    <tr>
+                        <th>公司</th><th>件數</th><th>比例</th>
+                    </tr>
+                    {% for label in top_10_com_count %}
+                        <tr >
+                            <td>{{ label.0 }}</td><td>{{ label.1 }}</td><td>{{ label.2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+			</div>
+
+			<div class="col-md-6 pull-right">
+                <div id="top_10_com_donut" class="img-responsive aligncenter" alt="" data-effect="slide-right"></div>
+			</div>
+		</div><! --/row -->
+        <center>
+            <a href="../" style="font-size: 18px; font-weight: bold;">Go back</a>
+        </center>
+
+	</div><! --/container -->
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/retina-1.1.0.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery.unveilEffects.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/raphael-min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery-1.8.2.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/morris-0.4.1.min.js" %}"></script>
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init(){
+            document.getElementById('start_yr').value={{ start_year }};
+            document.getElementById('end_yr').value={{ end_year }};
+        }
+
+        function start_yr_change(){
+            var start_yr_selected = document.getElementById("start_yr").value;
+            var end_yr_option = document.getElementById("end_yr");
+            for (var i = 0; i < end_yr_option.length; i++) {
+                end_yr_option.selectedIndex = 10;
+                (parseInt(end_yr_option[i].value) < parseInt(start_yr_selected))
+                    ? end_yr_option[i].disabled = true
+                    : end_yr_option[i].disabled = false;
+            }
+
+        }
+
+        function end_yr_change(){
+            var start_yr_option = document.getElementById("start_yr");
+            var start_yr_selected = document.getElementById("start_yr").value;
+            var end_yr_selected = document.getElementById("end_yr").value;
+            if (end_yr_selected < start_yr_selected){
+                start_yr_option.selectedIndex = 0;
+            }
+        }
+
+        Morris.Donut({
+            element: 'top_10_com_donut',
+            data: [
+                {% for label in top_10_com_count %}
+                    { label: '{{ label.0 }}', value: {{ label.1 }} },
+                {% endfor %}
+            ]
+        });
+
+    </script>
+</body>
+</html>

@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#yz0jtm)=q3imax1zg*nca_=f(79o!k+%904-l%ww3zr)!o1gs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['secret-citadel-19877.herokuapp.com', 'secret-citadel-19877']
+ALLOWED_HOSTS = ['127.0.0.1', 'secret-citadel-19877.herokuapp.com', 'secret-citadel-19877']
 
 
 # Application definition

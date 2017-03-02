@@ -28,7 +28,7 @@ def read_summarize_main():
     total_perm = list_of_lists[1][2]
     approved_perm = list_of_lists[2][2]
     ny_perm = list_of_lists[3][2]
-    end_year = list_of_lists[4][1]
+    end_year = list_of_lists[4][1][-4:]
     end_mon = list_of_lists[5][1]
     return total_perm, approved_perm, ny_perm, end_year, end_mon
 
@@ -89,7 +89,7 @@ def read_top_ten_state():
         new_list = list()
         for x in state_list:
             if i[0] == x[:2]:
-                new_list.append(x[3:])
+                new_list.append(x[3:-1])
                 new_list.append(i[1])
                 new_list.append(i[2])
         out_list.append(new_list)
@@ -159,3 +159,13 @@ def read_top_median_state():
                 out_list.append(x[3:])
                 out_list.append(i.split(',')[1])
     return out_list
+
+
+def get_state_list():
+    with open(data_path + 'data/State_list.csv') as f:
+        the_s_list = [line.rstrip('\n') for line in f]
+        state_list = list()
+        for i in the_s_list:
+            state_list.append(i[3:])
+
+    return state_list

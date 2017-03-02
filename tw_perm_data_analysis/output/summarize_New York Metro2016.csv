@@ -1,35 +1,35 @@
 ,Count,Salary
-count,,79.0
-mean,,80546.6349367
-std,,32710.4136565
+count,,102.0
+mean,,81272.1290196
+std,,32589.5160239
 min,,20530.0
-25%,,61860.5
-50%,,75000.0
+25%,,60169.0
+50%,,75533.0
 75%,,95000.0
 max,,200000.0
-NY,68.0,
-NJ,10.0,
+NY,85.0,
+NJ,16.0,
 CT,1.0,
 CT,,100485.0
-NY,,81319.5905882
-NJ,,73296.7
+NJ,,82175.0
+NY,,80876.1430588
 Bloomberg L.p.,4.0,
 The Execu|search Group,3.0,
+Hilton Garden Inn New York Midtown / Park Avenue,2.0,
 Pricewaterhousecoopers,2.0,
+New York City Department Of Education,2.0,
 W Green Hotel Groups,2.0,
 Volant Holding Llc,2.0,
-Crystal Window & Door Systems Ltd.,2.0,
-Computer Square Inc.,2.0,
-Omed Nyc,1.0,
-Premium Technology Inc.,1.0,
-Populus Group Llc,1.0,
+Teachers College Columbia University,2.0,
+Jp Morgan Chase & Co,2.0,
+Garden Of Hope Inc.,2.0,
+Oliver Wyman Inc,,170000.0
 The Brooklyn Hospital Center,,168522.0
 Santander Investment Securities Inc.,,159200.0
 Volant Holding Llc,,156846.5
-Jp Morgan Chase & Co,,154690.0
+Jp Morgan Chase & Co,,134845.0
+Mufg Union Bank N.a.,,130666.0
 Moody's Analytics,,130437.0
 Aetna Life Insurance Company,,130000.0
 Damascus Bakery Inc.,,128128.0
 Cirrus Data Solutions Inc.,,123240.0
-Pricewaterhousecoopers,,118830.5
-Art.sy Inc.,,116000.0

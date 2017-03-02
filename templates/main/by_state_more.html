@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Distribution by State</title>
+
+    <!-- Bootstrap core CSS -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    <!-- Custom styles for this template -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/custom-animations.css' %}">
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/by_state.css' %}">
+</head>
+<body>
+
+    <! -- ********** BLUE SECTION - JELLY ********** -->
+	<div id="jelly">
+		<div class="row nopadding">
+			<div class="col-md-5 col-md-offset-1 mt">
+				<h4>Salary Distribution by State</h4>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，{{ default_state }} 共有 {{ approved_perm }} 件 PERM 案件通過審查。</p>
+
+                 <form name="sel_state" action="{% url "by_state_more" %}" method="get">
+                    <table class="input_yr">
+                        <tr>
+                            <th>
+                                See:&nbsp;
+                            </th>
+                            <th>
+                                <select name="States" id="States">
+                                    {% for label in state_list %}
+                                        <option value= {{ label }}>{{ label }}</option>
+                                    {% endfor %}
+                                </select>
+                            </th>
+                            <th>
+                                <button name="Search" id="Search" style="color: #2B2E31">&nbsp;Go&nbsp;</button>
+                            </th>
+                        </tr>
+                    </table>
+                </form>
+			</div>
+
+			<div class="col-md-6 pull-left">
+                <div id="Year_line" class="img-responsive aligncenter" alt="" data-effect="slide-left"></div>
+			</div>
+		</div><! --/row -->
+        <center>
+            <a href="../" style="font-size: 18px; font-weight: bold; color: darkgreen">Go back</a>
+        </center>
+	</div><! --/Jelly -->
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/retina-1.1.0.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery.unveilEffects.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/raphael-min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery-1.8.2.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/morris-0.4.1.min.js" %}"></script>
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init(){
+            var States_option = document.getElementById("States");
+            States_option.selectedIndex = 36;
+        }
+
+        var year_line = Morris.Line({
+            element: 'Year_line',
+            data: [
+                    {% for label in years_mean_median %}
+                        { y: "{{ label.0 }}", a: {{ label.1 }}, b:{{ label.2 }} },
+                    {% endfor %}
+            ],
+            xkey: 'y',
+            ykeys: ['a', 'b'],
+            gridTextColor: '#fff',
+            gridLineColor:'#fff',
+            labels: ['平均', '中位數'],
+            xLabels: "year"
+        });
+    </script>
+</body>
+</html>

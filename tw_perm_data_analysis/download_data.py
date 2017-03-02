@@ -27,8 +27,9 @@ def get_last_year():
     tw_perm_df = pd.read_csv(data_path + 'data/TW_PERM.csv', names=col_names, dtype=str, skiprows=1)
     data_cleaning.convert_datetime(tw_perm_df, 'Decision_Date')
     sorted_df = tw_perm_df.sort_values('Decision_Date', ascending=True)
-    return str(sorted_df.iloc[[-1]]['Decision_Date']).split('-')[0][4:]
+    return str(sorted_df.iloc[[-1]]['Decision_Date']).split('-')[0][-4:]
 
+get_last_year()
 
 # get cases found
 def get_cases_found(last_year):

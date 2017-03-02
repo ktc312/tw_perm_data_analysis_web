@@ -1,26 +1,27 @@
 ,Count,Salary
-count,,1868.0
-mean,,93802.3499679
-std,,29381.5797248
+count,,1943.0
+mean,,94456.341369
+std,,29698.0209719
 min,,17014.4
-25%,,72883.2
-50%,,93267.0
-75%,,112352.5
+25%,,73330.6
+50%,,93995.0
+75%,,112716.0
 max,,220251.0
-CA,1868.0,
-CA,,93802.3499679
-Google Inc.,90.0,
-Super Micro Computer Inc.,63.0,
-Apple Inc.,54.0,
-Yahoo Inc.,43.0,
-Omnivision Technologies Inc.,33.0,
+CA,1943.0,
+CA,,94456.341369
+Google Inc.,98.0,
+Super Micro Computer Inc.,65.0,
+Apple Inc.,59.0,
+Yahoo Inc.,44.0,
+Omnivision Technologies Inc.,34.0,
+Nvidia Corporation,33.0,
 Cisco Systems Inc.,32.0,
-Nvidia Corporation,30.0,
-Intel Corporation,28.0,
+Intel Corporation,31.0,
 Tsmc North America,27.0,
 Marvell Semiconductor Inc.,27.0,
 Prophetstor Data Services Inc,,220251.0
 Netflix,,220000.0
+Cienet Technologies Inc,,213803.0
 Perkins Coie Llp,,200000.0
 Applied Wireless Identifications Group Inc.,,192026.0
 Grifols Diagnostic Solutions,,190620.0
@@ -28,4 +29,3 @@ Nxp Semiconductors Usa Inc.,,188115.0
 Envision Peripherals Inc.,,185400.0
 White & Case Llp,,185000.0
 Credit Suisse Securities (usa) Llc,,175000.0
-Innolux Optoelectronics Usa Inc.,,172058.0

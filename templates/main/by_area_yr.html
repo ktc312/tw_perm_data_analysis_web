@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Distribution By Area</title>
+
+    <!-- Bootstrap core CSS -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    <!-- Custom styles for this template -->
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/custom-animations.css' %}">
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    {% load static from staticfiles %}
+    <link rel="stylesheet" href="{% static 'assets/css/by_area.css' %}">
+</head>
+<body>
+
+<! -- ********** BLUE SECTION - CURIOUS ********** -->
+	<div id="curious">
+		<div class="row nopadding">
+			<div class="col-md-5 col-md-offset-1 mt">
+				<h4>Salary Distribution in {{ area_name }} Area</h4>
+                <form name="yrs" action="{% url "by_area_yr" %}" method="get">
+                    <table class="input_yr">
+                        <tr  height="30">
+                            <th>
+                                Area:
+                            </th>
+                            <th colspan="3">
+                                <select name="area_name" id="area_name">
+                                    <option value="NY"> New York Metro </option>
+                                    <option value="Bay"> California Bay </option>
+                                </select>
+                            </th>
+
+                        </tr>
+                        <tr  height="30">
+                            <th>
+                                From:&nbsp;
+                            </th>
+                            <th>
+                                <select name="start_yr" id="start_yr" onchange="start_yr_change()">
+                                    {% for label in yr_list %}
+                                        {% if forloop.first %}
+                                        <option value= {{ label }} selected="selected">{{ label }}</option>
+                                        {% else %}
+                                        <option value= {{ label }}>{{ label }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </th>
+                            <th>
+                                To:&nbsp;
+                            </th>
+                            <th>
+                                <select name="end_yr" id="end_yr" onchange="end_yr_change()">
+                                    {% for label in yr_list %}
+                                        {% if forloop.last %}
+                                        <option value= {{ label }} selected="selected">{{ label }}</option>
+                                        {% else %}
+                                        <option value= {{ label }}>{{ label }}</option>
+                                        {% endif %}
+                                    {% endfor %}
+                                </select>
+                            </th>
+                            <th>
+                                <button name="Search" id="Search" style="color: #2B2E31">&nbsp;Search&nbsp;</button>
+                            </th>
+                        </tr>
+                    </table>
+                </form>
+				<p>2007 年 10 月至 {{ end_year }} 年 {{ end_mon }} 月，共有 {{ approved_perm }} 件 PERM 案件通過審查，
+                    其中 {{ ny_perm }} 件來自大紐約地區。</p>
+                <p>以下為大紐約地區的概括統計：</p>
+                <table class="top_10_tables">
+                    <tr>
+                        <th> </th><th>薪資</th>
+                    </tr>
+                    <tr>
+                        <td>平均數</td><td>{{ ny_mean }}</td>
+                    </tr>
+                    <tr>
+                        <td>中位數</td><td>{{ ny_median }}</td>
+                    </tr>
+                    <tr>
+                        <td>標準差</td><td>{{ ny_std }}</td>
+                    </tr>
+                    <tr>
+                        <td>最低</td><td>{{ ny_min }}</td>
+                    </tr>
+                    <tr>
+                        <td>最高</td><td>{{ ny_max }}</td>
+                    </tr>
+                </table>
+			</div>
+
+			<div class="col-md-6 pull-right">
+                <div id="NY_bar" class="img-responsive aligncenter" alt="" data-effect="slide-right"></div>
+			</div>
+		</div><! --/row -->
+        <center>
+            <a href="../" style="font-size: 18px; font-weight: bold; color: darkgreen">Go back</a>
+        </center>
+	</div><! --/curious -->
+
+    {% load static from staticfiles %}
+    <script type="text/javascript" src="{% static "assets/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/bootstrap.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/retina-1.1.0.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery.unveilEffects.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/raphael-min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/jquery-1.8.2.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "assets/js/morris-0.4.1.min.js" %}"></script>
+    <script type="text/javascript">
+        window.onload = init;
+
+        function init(){
+            document.getElementById('start_yr').value={{ start_year }};
+            document.getElementById('end_yr').value={{ end_year }};
+        }
+
+        function start_yr_change(){
+            var start_yr_selected = document.getElementById("start_yr").value;
+            var end_yr_option = document.getElementById("end_yr");
+            for (var i = 0; i < end_yr_option.length; i++) {
+                end_yr_option.selectedIndex = 10;
+                (parseInt(end_yr_option[i].value) < parseInt(start_yr_selected))
+                    ? end_yr_option[i].disabled = true
+                    : end_yr_option[i].disabled = false;
+            }
+
+        }
+
+        function end_yr_change(){
+            var start_yr_option = document.getElementById("start_yr");
+            var start_yr_selected = document.getElementById("start_yr").value;
+            var end_yr_selected = document.getElementById("end_yr").value;
+            if (end_yr_selected < start_yr_selected){
+                start_yr_option.selectedIndex = 0;
+            }
+        }
+
+        var ny_bar = Morris.Bar({
+            element: 'NY_bar',
+            data: [
+                    {% for label in ny_salary_dis %}
+                        { y: "{{ label.0 }}", a: {{ label.1 }} },
+                    {% endfor %}
+            ],
+            xkey: ['y'],
+            ykeys: ['a'],
+            gridTextColor: '#fff',
+            gridLineColor:'#fff',
+            labels: ['人數'],
+            barColors: ['#196619'],
+            xLabelMargin: 50
+        });
+    </script>
+
+</body>
+</html>
